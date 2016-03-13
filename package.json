@@ -1,0 +1,38 @@
+{
+  "name": "react-firebase-tictactoe",
+  "version": "0.1.0",
+  "description": "Brower tic-tac-toe game written in JavaScript using React and Firebase.",
+  "private": "true",
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js && cp app/tictactoe.html builds/index.html",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base builds/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasdawson/react-firebase-tictactoe.git"
+  },
+  "author": {
+    "name": "Elias Dawson",
+    "email": "elias.echols@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliasdawson/react-firebase-tictactoe/issues"
+  },
+  "homepage": "https://github.com/eliasdawson/react-firebase-tictactoe#readme",
+  "dependencies": {
+    "firebase": "^2.4.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

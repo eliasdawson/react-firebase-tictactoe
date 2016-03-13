@@ -1,31 +1,12 @@
 <html>
 <head>
   <title>Firebase React Tic Tac Toe</title>
-  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
-  <style>
-    .ttt-board {
-    }
-
-    .ttt-row {
-      clear: left;
-      height: 2em;
-    }
-
-    .ttt-space {
-      border: 1px solid;
-      float: left;
-      height: 100%;
-      line-height: 2em;
-      width: 2em;
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
   <div id="app"></div>
-
+  <script src="vendor.bundle.js"></script>
+  <script src="bundle.js"></script>
+<!--
   <script type="text/jsx">
 
     var X = 'X';
@@ -36,7 +17,7 @@
     var Space = React.createClass({
       handleClick: function() {
         if ( this.props.data === '' ) {
-          this.props.playFn(this.props.colIndex, this.props.rowIndex);  
+          this.props.playFn(this.props.colIndex, this.props.rowIndex);
         }
       },
 
@@ -88,7 +69,7 @@
         state.player = (state.player === X) ? O : X;
         gameRef.set(state);
       },
-      
+
       render: function() {
         var rows = this.state.board.map(function (row, index) {
           return (
@@ -120,6 +101,6 @@
         });
     }
   </script>
-
+-->
 </body>
 </html>

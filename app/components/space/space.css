@@ -1,0 +1,8 @@
+.ttt-space {
+  border: 1px solid;
+  float: left;
+  height: 100%;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+}
