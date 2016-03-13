@@ -1,6 +1,5 @@
 var React = require('react');
 var Space = require('../space/space.js');
-require('./board-row.css');
 
 var BoardRow = React.createClass({
 

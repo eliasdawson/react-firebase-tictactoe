@@ -1,5 +1,4 @@
 var React = require('react');
-require('./space.css');
 
 var Space = React.createClass({
 
