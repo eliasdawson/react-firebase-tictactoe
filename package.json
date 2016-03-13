@@ -4,8 +4,8 @@
   "description": "Brower tic-tac-toe game written in JavaScript using React and Firebase.",
   "private": "true",
   "scripts": {
-    "build": "./node_modules/webpack/bin/webpack.js && cp app/tictactoe.html builds/index.html",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base builds/",
+    "build": "./node_modules/webpack/bin/webpack.js && cp app/tictactoe.html build/index.html",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

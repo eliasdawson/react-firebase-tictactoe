@@ -3,3 +3,6 @@
 
 # NPM Dependencies
 node_modules
+
+# Build directory
+build

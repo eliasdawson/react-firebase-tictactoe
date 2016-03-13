@@ -8,7 +8,7 @@ module.exports = {
     vendor: ['react', 'react-dom', 'firebase']
   },
   output: {
-      path:     'builds',
+      path:     'build',
       filename: 'bundle.js'
   },
   plugins: [
