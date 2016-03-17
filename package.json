@@ -38,6 +38,7 @@
     "postcss-cli": "^2.5.1",
     "postcss-scss": "^0.1.7",
     "precss": "^1.4.0",
+    "react-addons-test-utils": "^0.14.7",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
@@ -45,7 +46,9 @@
   "jest": {
     "unmockedModulePathPatterns": [
       "/node_modules/react",
-      "/node_modules/react-dom"
+      "/node_modules/react-dom",
+      "/node_modules/react-addons-test-utils",
+      "/node_modules/fbjs"
     ]
   }
 }
