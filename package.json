@@ -6,7 +6,7 @@
   "scripts": {
     "build-css": "./node_modules/postcss-cli/bin/postcss -m --use precss -o build/app.css app/app.css",
     "build": "./node_modules/webpack/bin/webpack.js && cp app/tictactoe.html build/index.html && npm run build-css",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/",
+    "start": "cp app/tictactoe.html build/index.html && ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/",
     "test": "./node_modules/jest-cli/bin/jest.js"
   },
   "repository": {

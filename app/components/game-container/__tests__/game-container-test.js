@@ -2,16 +2,17 @@ var TestUtils = require('react-addons-test-utils');
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-jest.unmock('../game');
+jest.unmock('../game-container');
+jest.unmock('../../../game');
 
 describe('game component', function() {
 
   var component;
-  var Game = require('../game');
+  var GameContainer = require('../game-container');
 
   beforeEach(function() {
     game = TestUtils.renderIntoDocument(
-      <Game gameId="0" />
+      <GameContainer gameId="0" />
     );
   });
 
@@ -30,6 +31,15 @@ describe('game component', function() {
       expect(game.state.player).toBe('X');
       game.play(0, 0);
       expect(game.state.player).toBe('O');
+    });
+
+    it('should not enter the current player in the specified space if the space is occupied', function() {
+      var state = game.state;
+      state.board[0][0] = 'O';
+      game.setState(state);
+      expect(game.state.board[0][0]).toBe('O');
+      game.play(0, 0);
+      expect(game.state.board[0][0]).toBe('O');
     });
 
   });
